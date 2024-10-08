@@ -37,7 +37,7 @@ jobs:
 
     - name: Run Robot Framework tests
       run: |
-        robot -d logsgit add  tests
+        robot -d logs add tests
         
     - name: Archive Robot Framework logs
       if: ${{ always() }}
