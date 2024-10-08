@@ -13,7 +13,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: https://github.com/RitadosReis/chips-academy-front-robot/report.html
+      url: https://ritadosreis.github.io/chips-academy-front-robot/report.html
 
     steps:
     - name: Checkout Repository
