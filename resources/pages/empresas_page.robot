@@ -40,3 +40,6 @@ ${BUTTON_SALVAR_ALTERAÇÕES}        id=save
 ${DATAGRID}                        //ul[@class='css-18psgb0']//li[@class='css-iatckd']
 ${REGISTROS_ESPERADOS_DATAGRID}
 
+#Pesquisar empresa
+${BOTÃO_PESQUISAR}                    id=r1j
+${EMPRESA_PESQUISADA}                 Teste Company Blacklist 385498
