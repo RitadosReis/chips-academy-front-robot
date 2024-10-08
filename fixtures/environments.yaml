@@ -1,0 +1,15 @@
+AMBIENTE: 
+  WEB:
+    URL: https://automacao.qacoders.dev.br/login
+    URLHOME: https://automacao.qacoders.dev.br/home
+    BROWSER: chrome
+    BROWSER_HAEDLESS: headlesschrome
+    TIMEOUT: 30
+
+  API:
+    URL: https://chips.qacoders.dev.br/api/
+
+
+# ${BASE_URL}                          https://chips.qacoders-academy.com.br
+# ${ENDPOINT_COMPANY}                  /api/company/
+# ${ENDPOINT_COMPANY_ADDRESS}          /api/company/address/

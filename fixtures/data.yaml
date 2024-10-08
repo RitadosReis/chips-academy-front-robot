@@ -1,0 +1,7 @@
+USERS:
+  SYSADMIN: sysadmin@qacoders.com
+  INVALID: fsdfsdf@test.com
+  
+PASSWORDS:
+  SYSADMIN: 1234@Test
+  INVALID: 43dfsd4532

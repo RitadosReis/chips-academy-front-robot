@@ -1,0 +1,59 @@
+name: Robot Framework - Front-End Tests
+
+on: push
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://github.com/RitadosReis/chips-academy-front-robot/report.html
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    
+    - name: Install dependencies
+      run: |
+        pip install --upgrade robotframework
+        pip install --upgrade robotframework-requests
+        pip install --upgrade robotframework-jsonlibrary
+        pip install --upgrade Faker
+        pip install --upgrade robotframework-faker
+        pip install --upgrade PyYAML
+        pip install --upgrade robotframework-seleniumlibrary
+        pip install --upgrade setuptools
+
+    - name: Run Robot Framework tests
+      run: |
+        robot -d logsgit add  tests
+        
+    - name: Archive Robot Framework logs
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: robot-logs
+        path: ./logs
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: logs/
+
+    - name: Deploy to Githug Pages
+      uses: actions/deploy-pages@v4
+
