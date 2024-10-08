@@ -29,3 +29,10 @@ ${COLUNA_DEPARTAMENTO}             //div[@class='css-wgzttu'][contains(text(), "
 ${COLUNA_TELEFONE}                 //div[@class='css-wgzttu'][contains(text(), "Departamento")]
 ${NUMEROS_PAGINAÇÃO}               //div[text()='1'][text()='-'][text()='30']
 
+#Editar usuário
+${NOME_USUARIO_ALTERAR}        ACGKhL AYqMI 
+${BOTÃO_EDITAR}                id=edit
+${BOTÃO_ALTERAR_NOME}          //input[contains(@name,'fullName')]  
+${NOVO_EMAIL}                  //input[contains(@name,'mail')]
+${SALVAR_ALTERACAO}            //button[@type='submit'][contains(.,'SALVAR ALTERAÇOES')]
+${USUARIO_ALTERADO}            ACGKhL Rima
