@@ -12,12 +12,14 @@ Gerar usuário
     ${email}             FakerLibrary.Email
 
     Set Global Variable    ${CPF_USUARIO}       ${cpf}
+    Set Global Variable    ${CPF_EXISTENTE}     11111111111
     Set Global Variable    ${NOME_USUARIO}      ${nome}
     Set Global Variable    ${EMAIL_USUARIO}     ${email}
-    Set Global Variable    ${EMAIL_INVALIDO}     julianajeri91gmail.com
+    Set Global Variable    ${EMAIL_INVALIDO}    julianajeri91gmail.com
     Set Global Variable    ${SENHA_USUARIO}     @4321Test
-    Set Global Variable    ${SENHA_INVALIDA}     1
-    Set Global Variable    ${PERFIL_USUARIO}    ADMIN  
+    Set Global Variable    ${SENHA_INVALIDA}    1
+    Set Global Variable    ${PERFIL_USUARIO}    ADMIN
+    
 
 Acessar menu Cadastros
     Wait Until Element Is Visible    ${MENU_CADASTROS}    ${AMBIENTE.WEB.TIMEOUT}
@@ -70,6 +72,14 @@ Validar a mensagem de e-mail invalido
     Element Text Should Be     ${TEXT_EMAIL_INVALIDO}     Email inválido
 
 Validar a mensagem de senha invalida
-    Wait Until Element Is Visible   ${TEXT_SENHA_INVALIDA}
-    Element Text Should Be     ${TEXT_SENHA_INVALIDA}  
+    Wait Until Element Is Visible   ${ALERT_ERRO}
+    Element Text Should Be     ${ALERT_ERRO}  
     ...    Senha precisa ter: uma letra maiúscula, uma letra minúscula, um número, um caractere especial(@#$%) e tamanho entre 8-12.
+
+Validar a mensagem de CPF existente
+    Wait Until Element Is Visible    ${ALERT_ERRO}
+    Element Text Should Be    ${ALERT_ERRO}    O cpf informado já existe em nossa base de dados.
+
+Validar a mensagem de senhas não conferem
+    Wait Until Element Is Visible    ${ALERT_ERRO}
+    Element Text Should Be    ${ALERT_ERRO}    As senhas não conferem.

@@ -33,7 +33,7 @@ CT02 - Cadastrar um novo usuário com Email invalido
     Clicar no botão Salvar novo
     Validar a mensagem de e-mail invalido
 
-T03 - Cadastrar um novo usuário com Senha invalida
+CT03 - Cadastrar um novo usuário com Senha invalida
     Gerar usuário
     Acessar menu Cadastros  
     Acessar menu Usuarios
@@ -46,3 +46,33 @@ T03 - Cadastrar um novo usuário com Senha invalida
     Preencher o campo Confirmação de senha    ${SENHA_INVALIDA}
     Clicar no botão Salvar novo
     Validar a mensagem de senha invalida
+
+CT04 - Cadastrar um novo usuário com CPF já cadastrado
+    [Tags]    cpf_existente
+    Gerar usuário
+    Acessar menu Cadastros  
+    Acessar menu Usuarios
+    Clicar no botão Novo cadastro
+    Preencher o campo Nome Completo           ${NOME_USUARIO}
+    Preencher o campo Email                   ${EMAIL_USUARIO}
+    Preencher o campo Perfil de Acesso        ${PERFIL_USUARIO}
+    Preencher o campo CPF                     ${CPF_EXISTENTE}
+    Preencher o campo Senha                   ${SENHA_USUARIO}    
+    Preencher o campo Confirmação de senha    ${SENHA_USUARIO}
+    Clicar no botão Salvar novo
+    Validar a mensagem de CPF existente
+
+CT04 - Cadastrar um novo usuário com senhas que não conferem
+    [Tags]    senhas_diferentes
+    Gerar usuário
+    Acessar menu Cadastros  
+    Acessar menu Usuarios
+    Clicar no botão Novo cadastro
+    Preencher o campo Nome Completo           ${NOME_USUARIO}
+    Preencher o campo Email                   ${EMAIL_USUARIO}
+    Preencher o campo Perfil de Acesso        ${PERFIL_USUARIO}
+    Preencher o campo CPF                     ${CPF_USUARIO}
+    Preencher o campo Senha                   ${SENHA_USUARIO}    
+    Preencher o campo Confirmação de senha    ${SENHA_USUARIO}123
+    Clicar no botão Salvar novo
+    Validar a mensagem de senhas não conferem
