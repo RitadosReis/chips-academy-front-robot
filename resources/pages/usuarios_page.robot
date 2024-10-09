@@ -28,6 +28,8 @@ ${COLUNA_EMAIL}                    //div[@class='css-wgzttu'][text()='Email']
 ${COLUNA_DEPARTAMENTO}             //div[@class='css-wgzttu'][contains(text(), "Departamento")]
 ${COLUNA_TELEFONE}                 //div[@class='css-wgzttu'][contains(text(), "Departamento")]
 ${NUMEROS_PAGINAÇÃO}               //div[text()='1'][text()='-'][text()='30']
+${TEXT_EMAIL_INVALIDO}             css:p.css-bbipig
+${TEXT_SENHA_INVALIDA}             css:div.MuiAlert-message.css-1xsto0d      
 
 #Editar usuário
 ${NOME_USUARIO_ALTERAR}        ACGKhL AYqMI 
