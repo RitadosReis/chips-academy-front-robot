@@ -14,7 +14,9 @@ Gerar usuário
     Set Global Variable    ${CPF_USUARIO}       ${cpf}
     Set Global Variable    ${NOME_USUARIO}      ${nome}
     Set Global Variable    ${EMAIL_USUARIO}     ${email}
+    Set Global Variable    ${EMAIL_INVALIDO}     julianajeri91gmail.com
     Set Global Variable    ${SENHA_USUARIO}     @4321Test
+    Set Global Variable    ${SENHA_INVALIDA}     1
     Set Global Variable    ${PERFIL_USUARIO}    ADMIN  
 
 Acessar menu Cadastros
@@ -62,3 +64,12 @@ Preencher o campo Confirmação de senha
 
 Clicar no botão Salvar novo     
     Click Element     ${BOTAO_SALVAR}  
+
+Validar a mensagem de e-mail invalido
+    Wait Until Element Is Visible   ${TEXT_EMAIL_INVALIDO} 
+    Element Text Should Be     ${TEXT_EMAIL_INVALIDO}     Email inválido
+
+Validar a mensagem de senha invalida
+    Wait Until Element Is Visible   ${TEXT_SENHA_INVALIDA}
+    Element Text Should Be     ${TEXT_SENHA_INVALIDA}  
+    ...    Senha precisa ter: uma letra maiúscula, uma letra minúscula, um número, um caractere especial(@#$%) e tamanho entre 8-12.
