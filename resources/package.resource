@@ -7,11 +7,8 @@ Resource    ../resources/shared/utils_keywords.robot
 
 Library     SeleniumLibrary
 Library     Collections
-Library     JSONLibrary
-Library     BuiltIn
 Library     RequestsLibrary
 Library     String
-Library     Collections
 Library     FakerLibrary    locale=pt_BR
 
 Variables    ../fixtures/data.yaml
