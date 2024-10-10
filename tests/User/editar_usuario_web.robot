@@ -7,7 +7,7 @@
 # *** Test Cases ***
 
 # Editar um usuário existente 
-# #teste comentário pois a aplicação está com BUG
+#teste comentário pois a aplicação está com BUG
 #     Clicar no botão de cadastro 
 #     Clicar no botão de usuários
 #     Digitar o nome do usuário desejado 

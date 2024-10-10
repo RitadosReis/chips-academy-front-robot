@@ -103,3 +103,15 @@ Validar botão avançar e voltar no rodapé datagrid
     Capture Page Screenshot
     Click Element                        ${BUTTON_VOLTAR_TELA_USUARIOS}
     Sleep    3
+
+# Pesquisa de um usuário 
+# Clicar em cadastro
+#     Click Element                    locator=${CLICAR_CADASTRO} 
+
+# Clicar em usuários
+#     Click Element                    locator=${CLICAR_USUARIO}
+
+# Digitar o usuário desejado 
+#     Click Element                    locator=${INPUT_PESQUISAR}
+#     Input Text                       locator=${INPUT_PESQUISAR}        text=${NOME_USUARIO}  
+
