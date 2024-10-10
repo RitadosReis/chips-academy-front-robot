@@ -5,6 +5,7 @@ Resource    ../resources/pages/usuarios_page.robot
 Resource    ../resources/pages/empresas_page.robot
 Resource    ../resources/shared/utils_keywords.robot
 
+
 Library     SeleniumLibrary
 Library     Collections
 Library     RequestsLibrary

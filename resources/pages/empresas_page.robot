@@ -5,7 +5,7 @@ Resource    ../../resources/package.resource
 
 *** Variables ***
 ${CAMPO_PESQUISA}                  //input[@class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng']
-${MENU_USUARIOS}                   //a[@class='css-ew2jk']href='/user'
+${MENU_USUARIOS}                  //a[@class='css-ew2jk']href='/user'
 ${BUTTON_NOVO_CADASTRO}            //button[@id='Novo Cadastro']
 ${BUTTON_EDITAR_TELA_EMPRESA}      //button[@id='edit']
 ${BUTTON_AVANÇAR_TELA_EMPRESA}     //button[@class='css-kab9pu']

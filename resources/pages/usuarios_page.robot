@@ -38,3 +38,11 @@ ${BOTÃO_ALTERAR_NOME}          //input[contains(@name,'fullName')]
 ${NOVO_EMAIL}                  //input[contains(@name,'mail')]
 ${SALVAR_ALTERACAO}            //button[@type='submit'][contains(.,'SALVAR ALTERAÇOES')]
 ${USUARIO_ALTERADO}            ACGKhL Rima
+
+# pesquisar usuário
+${CLICAR_CADASTRO}             //span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Cadastros')]
+${CLICAR_USUARIO}              //span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Usuários')]                  
+${INPUT_PESQUISAR}             input[class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng"]
+${NOME_USUARIO}                ADMIN Blacklist
+${QUANTIDADE_REGISTRO}         (//div[contains(.,'1-30 de 4349')])[5]
+
