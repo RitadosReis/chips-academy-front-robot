@@ -7,6 +7,7 @@ Test Teardown     Fechar navegador
 
 *** Test Cases ***
 CT001 - Editar endereço de cadastro de uma empresa com sucesso
+    [Tags]    editar_empresa_sucesso
     Gerar empresa
     Acesse o menu empresa
     Selecione a opção editar no cadastro de uma empresa
@@ -23,6 +24,7 @@ CT001 - Editar endereço de cadastro de uma empresa com sucesso
 
 
 CT002 - Editar endereço de cadastro de uma empresa - Cenários alternativos
+    [Tags]    editar_empresa_alternativo
     Acesse o menu empresa
     Selecione a opção editar no cadastro de uma empresa
     Altere os dados no campo CEP            SPSPSPSP

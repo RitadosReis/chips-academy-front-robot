@@ -65,21 +65,21 @@ Preencher o campo Confirmação de senha
     Capture Page Screenshot  
 
 Clicar no botão Salvar novo     
-    Click Element     ${BOTAO_SALVAR}  
+    Click Element                    ${BOTAO_SALVAR}  
 
 Validar a mensagem de e-mail invalido
-    Wait Until Element Is Visible   ${TEXT_EMAIL_INVALIDO} 
-    Element Text Should Be     ${TEXT_EMAIL_INVALIDO}     Email inválido
+    Wait Until Element Is Visible    ${TEXT_EMAIL_INVALIDO} 
+    Element Text Should Be           ${TEXT_EMAIL_INVALIDO}     Email inválido
 
 Validar a mensagem de senha invalida
     Wait Until Element Is Visible   ${ALERT_ERRO}
-    Element Text Should Be     ${ALERT_ERRO}  
+    Element Text Should Be          ${ALERT_ERRO}  
     ...    Senha precisa ter: uma letra maiúscula, uma letra minúscula, um número, um caractere especial(@#$%) e tamanho entre 8-12.
 
 Validar a mensagem de CPF existente
     Wait Until Element Is Visible    ${ALERT_ERRO}
-    Element Text Should Be    ${ALERT_ERRO}    O cpf informado já existe em nossa base de dados.
+    Element Text Should Be           ${ALERT_ERRO}    O cpf informado já existe em nossa base de dados.
 
 Validar a mensagem de senhas não conferem
     Wait Until Element Is Visible    ${ALERT_ERRO}
-    Element Text Should Be    ${ALERT_ERRO}    As senhas não conferem.
+    Element Text Should Be           ${ALERT_ERRO}    As senhas não conferem.

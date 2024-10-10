@@ -38,6 +38,7 @@ ${BOTÃO_ALTERAR_NOME}          //input[contains(@name,'fullName')]
 ${NOVO_EMAIL}                  //input[contains(@name,'mail')]
 ${SALVAR_ALTERACAO}            //button[@type='submit'][contains(.,'SALVAR ALTERAÇOES')]
 ${USUARIO_ALTERADO}            ACGKhL Rima
+${USUARIO_EMAIL}               acgihml@outlook.com
 
 # pesquisar usuário
 ${CLICAR_CADASTRO}             //span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Cadastros')]

@@ -38,7 +38,7 @@ robot -d ./logs tests/nome_arquivo.robot
 - **resources/**: Contém recursos adicionais que podem ser utilizados pelos testes, como:
   - **empresa_kws.resource/**: Arquivo de Keywords da suíte de empresa.
   - **login_kws.resource/**: Arquivo de Keywords da suíte de login.
-  - **usuarios_kws.resource/**: Arquivo de Keywords da suíte de usuário.
+  - **usuario_kws.resource/**: Arquivo de Keywords da suíte de usuário.
   - **empresa_page.resource/**: Arquivo contendo todas as variaveis da page de empresas.
   - **login_page.resource/**: Arquivo contendo todas as variaveis da page de login.
   - **usuarios_page.resource/**: Arquivo contendo todas as variaveis da page de usuarios.
@@ -52,42 +52,54 @@ robot -d ./logs tests/nome_arquivo.robot
 
 ## 📁 Dependencias ##
 ```
+.
 ├── .github/workflows
-│   ├── robot-framework.yml
+│   └──  robot-framework.yml
 │   
 ├── fixtures
 │   ├── data.yaml
-│   ├── environments.yaml
+│   └──  environments.yaml
 │
 ├── logs
 │   ├── log.html
 │   ├── output.xml
-│   ├── report.html
+│   └── report.html
 │   
 ├── resources
 |   ├── package.resource
 │   │  
 |   ├── keywords
-|   |   ├── cadastro_usuario_kws.resource
 |   |   ├── cadastro_empresa_kws.resource
+|   |   ├── cadastro_usuario_kws.resource
+|   |   ├── editar_empresa_kws.resource
+|   |   ├── editar_usuario_kws.resource
+|   |   ├── listar_empresa_kws.resource
 |   |   ├── login_kws.resource
-|   |   ├── listar_usuario_kws.resource
+|   |   └── usuario_kws.resource
 │   │  
 |   ├── pages
 |   |   ├── empresa_page.robot
 |   |   ├── login_page.robot
-|   |   ├── usuarios_page.robot
+|   |   └── usuarios_page.robot
 │   │  
-|   ├── shared
-|   |   ├── utils_keywords.robot
+|   └── shared
+|       └── utils_keywords.robot
 │  
 ├── tests
-│   ├── cadastro_empresa_web.robot
-│   ├── cadastro_usuario_web.robot
-│   ├── editar_usuario_web.robot
-│   ├── login_web.robot
-│   ├── listar_usuario_web.robot
-│   
-├──.gitignore
+│   └── Auth
+│   │    └── login_web.robot
+│   │
+│   └── Company
+│   │   ├── cadastro_empresa_web.robot
+│   │   ├── editar_empresa_web.robot
+│   │   └── listar_empresa_web.robot
+│   │
+│   └── User
+│       ├── cadastro_usuario_web.robot
+│       ├── editar_usuario_web.robot
+│       └── listar_usuario_web.robot
+│
+├── .gitignore
 ├── README.md
+└── requeriments.txt
 ```

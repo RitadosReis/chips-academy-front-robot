@@ -7,6 +7,7 @@ Test Teardown     Fechar navegador
 
 *** Test Cases ***
 CT01 - Cadastrar uma nova empresa com sucesso
+    [Tags]    cadastrar_empresa_sucesso
     Gerar empresa
     Acessar menu Cadastros  
     Acesse o menu Empresa

@@ -7,6 +7,7 @@ Test Teardown     Fechar navegador
 
 *** Test Cases ***
 CT01 - Cadastrar um novo usuário com sucesso
+    [Tags]    cadastro_usuario_sucesso
     Gerar usuário
     Acessar menu Cadastros  
     Acessar menu Usuarios
@@ -20,6 +21,7 @@ CT01 - Cadastrar um novo usuário com sucesso
     Clicar no botão Salvar novo
 
 CT02 - Cadastrar um novo usuário com Email invalido
+    [Tags]    email_invalido
     Gerar usuário
     Acessar menu Cadastros  
     Acessar menu Usuarios
@@ -34,6 +36,7 @@ CT02 - Cadastrar um novo usuário com Email invalido
     Validar a mensagem de e-mail invalido
 
 CT03 - Cadastrar um novo usuário com Senha invalida
+    [Tags]    senha_invalida
     Gerar usuário
     Acessar menu Cadastros  
     Acessar menu Usuarios
