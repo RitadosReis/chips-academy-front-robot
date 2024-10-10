@@ -40,7 +40,7 @@ Pesquisar usuário
 
 Validar resultado pesquisa
     [Arguments]                          ${usuario_pesquisado}
-    Wait Until Element Is Not Visible    ${usuario_pesquisado}    ${AMBIENTE.WEB.TIMEOUT}
+    Wait Until Element Is Visible        ${usuario_pesquisado}    ${AMBIENTE.WEB.TIMEOUT}
     
 Clicar botão novo cadastro
     Page Should Contain Element          ${BUTTON_NOVO_CADASTRO}
