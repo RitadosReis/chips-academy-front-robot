@@ -4,7 +4,7 @@ Resource         ../../resources/package.resource
 
 *** Keywords ***
 Acessar página login
-    Open Browser                     url=${AMBIENTE.WEB.URL}    browser=${AMBIENTE.WEB.BROWSER}
+    Open Browser                     url=${AMBIENTE.WEB.URL}    browser=${AMBIENTE.WEB.BROWSER_HAEDLESS}
 
 Digitar o email
     Wait Until Element Is Visible    ${usernameInput}     ${AMBIENTE.WEB.TIMEOUT}
